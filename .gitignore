@@ -1,26 +1,4 @@
-# Dependencias
 node_modules/
-
-# Builds y distribuciones
 dist/
-dist-ssr/
-build/
-
-# Variables de entorno
 .env
-*.local
 
-# Logs específicos
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Configuración de editores
-.vscode/
-!.vscode/extensions.json
-.idea/
-.DS_Store
-
-# Otros
-/bin/
