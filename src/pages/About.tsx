@@ -68,7 +68,7 @@ const About = () => {
             <div className="flex flex-col items-center">
               <div className="w-32 h-32 bg-white rounded-full mb-6 flex items-center justify-center p-2 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-900/20">
                 <img
-                  src="./src/components/img/LOGO_COMPAÑIA.png"
+                  src="/img/LOGO_COMPAÑIA.png"
                   alt="INFINICORE WEB WORKS Logo"
                   className="w-28 h-28 object-contain"
                 />

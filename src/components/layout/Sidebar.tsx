@@ -65,7 +65,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex flex-col h-full">
           <div className="flex h-14 items-center justify-between border-b px-4">
             <img
-              src="./src/components/img/LOGO_MONEYWISE.png"
+              src="/img/LOGO_MONEYWISE.png"
               alt="MoneyWise"
               className="h-27 w-46 mt-4"
             />
@@ -116,8 +116,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                     className="cursor-pointer hover:opacity-75 transition-opacity"
                   >
                     <img
-                      src="./src/components/img/LOGO_COMPAÑIA.png"
-                      alt="MoneyWise"
+                      src="/img/LOGO_COMPAÑIA.png"
+                      alt="Logo de INFINICORE WEB WORKS"
                       className="h-25 w-auto"
                     />
                   </a>
