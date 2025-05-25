@@ -331,42 +331,42 @@ const Reports = () => {
                   </TabsTrigger>
                 </TabsList>
               <TabsContent value="overview">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Card>
-                    <CardHeader>
-                      <CardTitle>Resumen Mensual</CardTitle>
-                      <CardDescription>
-                        Resumen financiero para el período seleccionado
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="grid grid-cols-3 gap-4 text-center">
-                        <div>
-                          <div className="text-2xl font-bold text-green-500">{currencySymbol}{totalIncome.toFixed(2)}</div>
-                          <div className="text-sm text-muted-foreground">Ingresos</div>
-                        </div>
-                        <div>
-                          <div className="text-2xl font-bold text-red-500">{currencySymbol}{totalExpense.toFixed(2)}</div>
-                          <div className="text-sm text-muted-foreground">Gastos</div>
-                        </div>
-                        <div>
-                          <div className="text-2xl font-bold text-blue-500">{currencySymbol}{netBalance.toFixed(2)}</div>
-                          <div className="text-sm text-muted-foreground">Ahorros</div>
-                        </div>
-                      </div>
-                      <div className="mt-6 space-y-4">
-                        <div>
-                          <div className="flex justify-between text-sm">
-                            <span>Tasa de Ahorro</span>
-                            <span className="font-medium">{savingRate.toFixed(1)}%</span>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>Resumen Mensual</CardTitle>
+                        <CardDescription>
+                          Resumen financiero para el período seleccionado
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                          <div>
+                            <div className="text-xl sm:text-2xl font-bold text-green-500">{currencySymbol}{totalIncome.toFixed(2)}</div>
+                            <div className="text-sm text-muted-foreground">Ingresos</div>
                           </div>
-                          <div className="w-full h-2 bg-gray-200 rounded-full mt-1">
-                            <div className="h-2 bg-blue-500 rounded-full" style={{ width: `${Math.min(100, Math.max(0, savingRate))}%` }} />
+                          <div>
+                            <div className="text-xl sm:text-2xl font-bold text-red-500">{currencySymbol}{totalExpense.toFixed(2)}</div>
+                            <div className="text-sm text-muted-foreground">Gastos</div>
+                          </div>
+                          <div>
+                            <div className="text-xl sm:text-2xl font-bold text-blue-500">{currencySymbol}{netBalance.toFixed(2)}</div>
+                            <div className="text-sm text-muted-foreground">Ahorros</div>
                           </div>
                         </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                        <div className="mt-6 space-y-4">
+                          <div>
+                            <div className="flex justify-between text-sm">
+                              <span>Tasa de Ahorro</span>
+                              <span className="font-medium">{savingRate.toFixed(1)}%</span>
+                            </div>
+                            <div className="w-full h-2 bg-gray-200 rounded-full mt-1">
+                              <div className="h-2 bg-blue-500 rounded-full" style={{ width: `${Math.min(100, Math.max(0, savingRate))}%` }} />
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   
                   {categoryData.length > 0 ? (
                     <Card>
